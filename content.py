@@ -5,7 +5,7 @@ import json
 from datetime import datetime
 
 # bitbucket_folder_path = "/Users/chriskarvouniaris/workspace_local/Bitbucket/"
-bitbucket_folder_path = "/Users/chriskarvouniaris/workspace_local/bitbucket_to_see/"
+bitbucket_folder_path = "/Users/chriskarvouniaris/workspace_local/gitlab/"
 repo_relative_foler_paths = os.listdir(bitbucket_folder_path)
 repos = [git.Repo(os.path.join(bitbucket_folder_path, repo_relative_path)) for repo_relative_path in repo_relative_foler_paths]
 emails = [
@@ -37,9 +37,3 @@ with open(last_import_ts_file_path, "w") as outfile:
         "last_commit_git_import_ts" : datetime.utcnow().strftime('%s')
     }
     json.dump(body, outfile)
-print("fbfuq")
-print("ckopp")
-print("rvumg")
-print("wvleb")
-print("jelvl")
-print("fgyjv")
