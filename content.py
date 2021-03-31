@@ -9,8 +9,6 @@ bitbucket_folder_path = "/Users/chriskarvouniaris/workspace_local/gitlab/"
 repo_relative_foler_paths = os.listdir(bitbucket_folder_path)
 repos = [git.Repo(os.path.join(bitbucket_folder_path, repo_relative_path)) for repo_relative_path in repo_relative_foler_paths]
 emails = [
-    'christos.karvouniaris247@gmail.com',
-    'c.karvouniaris@trebbble.co',
     'christos.karvouniaris@lightsourcelabs.com'
 ]
 
