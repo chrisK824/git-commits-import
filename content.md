@@ -18,4 +18,3 @@ Moreover, this mechanism only rewards developers that work in companies that hos
 
 Considering the undeniably popularity of GitHub, developers that use other platforms are disadvantaged. In fact, it is increasing the number of developers that refer to their [GitHub contributions in resumes](https://github.com/resume/resume.github.com). Similarly, recruiters [may use GitHub to find talents](https://www.socialtalent.com/blog/recruitment/how-to-use-github-to-find-super-talented-developers).
 
-fohwatenip xyoffdmisf fbephwqovh loatjiqgxx bdqkkjmgcq xplyjdgqri ygvdbvwpyo rvpiqytpew
