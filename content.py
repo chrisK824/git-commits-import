@@ -33,4 +33,3 @@ with open(last_import_ts_file_path, "w") as outfile:
         "last_commit_git_import_ts" : str(datetime.utcnow())
     }
     json.dump(body, outfile)
-print("befnh")
