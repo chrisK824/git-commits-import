@@ -10,4 +10,4 @@ importer = Importer([repo], mock_repo)
 # my work email
 importer.set_author(['christos.karvouniaris247@gmail.com', 'c.karvouniaris@trebbble.co'])
 importer.import_repository()
-print("qblay")
+print("erdch")
