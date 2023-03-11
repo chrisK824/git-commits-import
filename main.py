@@ -7,6 +7,10 @@ from datetime import datetime
 bitbucket_folder_path = "/Users/chriskarvouniaris/workspace_local/Bitbucket/"
 repo_relative_foler_paths = os.listdir(bitbucket_folder_path)
 repos = [git.Repo(os.path.join(bitbucket_folder_path, repo_relative_path)) for repo_relative_path in repo_relative_foler_paths]
+emails = [
+    'christos.karvouniaris247@gmail.com',
+    'c.karvouniaris@trebbble.co'
+]
 
 last_import_ts_file_path = "last_import_ts.json"
 with open(last_import_ts_file_path, 'r') as f:
@@ -18,7 +22,8 @@ if 'last_commit_git_import_ts' in json_data:
 
 mock_repo = git.Repo(".", search_parent_directories=True)
 importer = Importer(repos, mock_repo)
-importer.set_author(['christos.karvouniaris247@gmail.com', 'c.karvouniaris@trebbble.co'])
+importer.set_author(emails)
+
 if LAST_COMMIT_GIT_IMPORT_TS:
     importer.set_ignore_before_date(LAST_COMMIT_GIT_IMPORT_TS)
 importer.import_repository()
