@@ -13,6 +13,7 @@ It has been automatically created using Miro Mannino's [Contributions Importer f
 5. Run the main.py script to fetch all of your commits from the git repos in the destination folders
 6. Git add, git commit and git push 
 7. Done - check your github graph to see the pushed commits - the commits will be accounted on this dummy mock repo so just you can monitor your commits from all other platforms
+8. Star the repo :) 
 
 
 ## Notice
