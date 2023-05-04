@@ -4,18 +4,6 @@ The aim of this repository is to report in GitHub contributions coming from othe
 
 It has been automatically created using Miro Mannino's [Contributions Importer for GitHub](https://github.com/miromannino/contributions-importer-for-github)
 
-## Usage:
-
-1. Clone or fork the repo
-2. Modify main.py to include the paths for your git projects folders - can include any git repo from any platform, as it is just local in your station
-3. Modify main.py to include the emails used for the git repositories you pointing at - can include multiple emails, so you can cover personal, work email etc
-4. Initialise last_import_ts.json as empty json for the first runtime - after each run of the script, this will be populated so that the next runs won't include already counted commits
-5. Run the main.py script to fetch all of your commits from the git repos in the destination folders
-6. Git add, git commit and git push 
-7. Done - check your github graph to see the pushed commits - the commits will be accounted on this dummy mock repo so just you can monitor your commits from all other platforms
-8. Star the repo :) 
-
-
 ## Notice
 
 The content of this repository contains mock code. This prevents private source code to be leaked. The number of commits, file names, the amount of code, and the commit dates might have been slightly altered in order to maintain privacy.
