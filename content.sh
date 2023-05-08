@@ -1,3 +1,3 @@
 echo "gumul"
 echo "khels"
-echo "dsphr"
+echo "hqwsb"
