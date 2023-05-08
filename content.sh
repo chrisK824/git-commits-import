@@ -1,2 +1,2 @@
 echo "gumul"
-echo "ahmhy"
+echo "fhooh"
