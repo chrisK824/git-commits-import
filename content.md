@@ -2,8 +2,11 @@
 
 The aim of this repository is to report in GitHub contributions coming from other platforms.
 
-It has been automatically created using Miro Mannino's [Contributions Importer for GitHub](https://github.com/miromannino/contributions-importer-for-github)
+It has been created using Miro Mannino's [Contributions Importer for GitHub](https://github.com/miromannino/contributions-importer-for-github)
 
+## Usage
+
+- 
 ## Notice
 
 The content of this repository contains mock code. This prevents private source code to be leaked. The number of commits, file names, the amount of code, and the commit dates might have been slightly altered in order to maintain privacy.
@@ -20,4 +23,4 @@ Considering the undeniably popularity of GitHub, developers that use other platf
 
 In more extreme cases, some developers decided to boycott this GitHub's lock-in system, and developed tools that can alter GitHub's contribution graph with fake commits: [Rockstar](https://github.com/avinassh/rockstar) and [Vanity text for GitHub](https://github.com/ihabunek/github-vanity) are good examples. 
 
-wpsofuqeih
+kyqichweve obaimfvlsa fhxxuspvuu rnjxxuulep vaeeuockqj jjlpqpocqt bwilacexlx pjphooapje shxikotfjv
