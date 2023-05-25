@@ -21,3 +21,22 @@ Considering the undeniably popularity of GitHub, developers that use other platf
 In more extreme cases, some developers decided to boycott this GitHub's lock-in system, and developed tools that can alter GitHub's contribution graph with fake commits: [Rockstar](https://github.com/avinassh/rockstar) and [Vanity text for GitHub](https://github.com/ihabunek/github-vanity) are good examples. 
 
 Instead, the aim of [Contributions Importer for GitHub](https://github.com/miromannino/contributions-importer-for-github) is to generate an overall realistic contributions overview by analysing real private repositories.
+
+## Usage
+
+* At the root folder of the repository create a file named `settings.json`
+* In that file one can specify:
+  * `git_folder_path` : the folder absolute path where all local git repositories are located
+  * `last_imported_commit_ts`: should be initialised as `0` . The script will automatically increase that each time is running to avoid duplicating commits imported
+  * `emails`: a list of emails that should be used to identify your commits from the repositories
+- In that file specify the settings for your case - use the keyword provided in the example below:
+```
+{
+  "git_folder_path": "/place/your/path/here/",
+  "last_imported_commit_ts": 0,
+  "emails": [
+    "mypersonalemail@gmail.com",
+    "myname@companydomain.com"
+  ]
+}
+```
