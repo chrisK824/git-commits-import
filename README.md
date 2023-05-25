@@ -40,3 +40,7 @@ Instead, the aim of [Contributions Importer for GitHub](https://github.com/mirom
   ]
 }
 ```
+* Run `python3 main.py` - this will start analysing and parsing all git repos in the specified folder path and mock the ones that match the emails list in settings
+* `git add . ; git commit -m "import mock commits"; git push`
+* Done
+* Star the repo :) 
