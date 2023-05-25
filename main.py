@@ -4,36 +4,30 @@ import os
 import json
 from datetime import datetime
 
-# bitbucket_folder_path = "/Users/chriskarvouniaris/workspace_local/Bitbucket/"
-bitbucket_folder_path = "<PLACEHOLDER>"
-repo_relative_foler_paths = os.listdir(bitbucket_folder_path)
-repos = [git.Repo(os.path.join(bitbucket_folder_path, repo_relative_path)) for repo_relative_path in repo_relative_foler_paths]
-emails = [
-    'christos.karvouniaris247@gmail.com',
-    'c.karvouniaris@trebbble.co',
-    'christos.karvouniaris@lightsourcelabs.com'
+settings_path = "settings.json"
+with open(settings_path, 'r') as f:
+    settings = json.load(f)
+
+GIT_FOLDER_PATH = str(settings['git_folder_path'])
+EMAILS = settings['emails']
+LAST_IMPORTED_COMMIT_TIMESTAMP = int(settings['last_imported_commit_ts'])
+
+repo_relative_folder_paths = os.listdir(GIT_FOLDER_PATH)
+repos = [
+    git.Repo(os.path.join(GIT_FOLDER_PATH, repo_relative_path))
+    for repo_relative_path in repo_relative_folder_paths
 ]
-
-last_import_ts_file_path = "last_import_ts.json"
-with open(last_import_ts_file_path, 'r') as f:
-    json_data = json.load(f)
-
-
-
 
 mock_repo = git.Repo(".", search_parent_directories=True)
 importer = Importer(repos, mock_repo)
-importer.set_author(emails)
+importer.set_author(EMAILS)
 
-if 'last_commit_git_import_ts' in json_data:
-    LAST_COMMIT_GIT_IMPORT_TS = int(json_data["last_commit_git_import_ts"])
-    importer.set_ignore_before_date(LAST_COMMIT_GIT_IMPORT_TS)
-
+if LAST_IMPORTED_COMMIT_TIMESTAMP >= 0:
+    importer.set_ignore_before_date(LAST_IMPORTED_COMMIT_TIMESTAMP)
 
 importer.import_repository()
 
-with open(last_import_ts_file_path, "w") as outfile:
-    body = {
-        "last_commit_git_import_ts" : datetime.utcnow().strftime('%s')
-    }
-    json.dump(body, outfile)
+# storing last timestamp so that next time we do not import same commits again
+settings['last_imported_commit_ts'] = datetime.utcnow().strftime('%s')
+with open(settings_path, "w") as outfile:
+    json.dump(settings, outfile)

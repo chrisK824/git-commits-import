@@ -13,7 +13,7 @@ emails = [
     'christos.karvouniaris@lightsourcelabs.com'
 ]
 
-last_import_ts_file_path = "last_import_ts.json"
+last_import_ts_file_path = "settings.json"
 with open(last_import_ts_file_path, 'r') as f:
     json_data = json.load(f)
 
