@@ -4,7 +4,8 @@ import os
 import json
 from datetime import datetime
 
-bitbucket_folder_path = "/Users/chriskarvouniaris/workspace_local/Bitbucket/"
+# bitbucket_folder_path = "/Users/chriskarvouniaris/workspace_local/Bitbucket/"
+bitbucket_folder_path = "<PLACEHOLDER>"
 repo_relative_foler_paths = os.listdir(bitbucket_folder_path)
 repos = [git.Repo(os.path.join(bitbucket_folder_path, repo_relative_path)) for repo_relative_path in repo_relative_foler_paths]
 emails = [
