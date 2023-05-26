@@ -22,3 +22,24 @@
   * Set the commiter user email through git cli like that: `git config user.email "github-email-here"` . You can skip that part if you already have this set. Use `global` flag if you want this to be global setting for all repositories in your system.
   * Run `main.py`: this will analyse all repos in the target directory and import all the commits found with author one of the requested emails
   * As you normally would do, add, commit and push to remote repository
+
+
+## Example of my use case:
+
+* `settings.json`:
+```json
+{
+  "git_folder_path": "/Users/chriskarvouniaris/workspace_local/Bitbucket/",
+  "last_imported_commit_ts": 0,
+  "emails": [
+    "christos.karvouniaris247@gmail.com",
+    "c.karvouniaris@trebbble.co",
+    "christos.karvouniaris@lightsourcelabs.com"
+  ],
+  "new_author": "chrisK824 <christos.karvouniaris247@gmail.com>"
+}
+
+```
+* git user.email config:
+`git config user.email "christos.karvouniaris247@gmail.com"
+`
