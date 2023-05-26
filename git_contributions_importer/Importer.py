@@ -120,7 +120,9 @@ class Importer:
                 print('    Commit at: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(break_committed_date)))
                 message = 'add code in files types: ' + ','.join(broken_stats.insertions.keys()) + \
                           '\nremove code in files types: ' + ','.join(broken_stats.deletions.keys())
-                self.committer.commit(break_committed_date, message, author=new_author)
+                # self.committer.commit(break_committed_date, message, author=new_author)
+                from datetime import date
+                self.committer.commit(1684976379, message, author=new_author)
                 last_committed_date = break_committed_date
 
     ''' iter commits coming from any branch'''
