@@ -122,6 +122,7 @@ class Importer:
                           '\nremove code in files types: ' + ','.join(broken_stats.deletions.keys())
                 # self.committer.commit(break_committed_date, message, author=new_author)
                 from datetime import date
+                print(new_author)
                 self.committer.commit(1684976379, message, author=new_author)
                 last_committed_date = break_committed_date
 
