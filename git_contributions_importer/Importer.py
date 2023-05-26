@@ -61,7 +61,7 @@ class Importer:
         self.content = Content(mock_repo.working_tree_dir)
         self.committer = Committer(mock_repo, self.content)
 
-    def import_repository(self):
+    def import_repository(self, new_author=None):
         commits_for_last_day = 0
 
         if self.start_from_last:
@@ -120,7 +120,7 @@ class Importer:
                 print('    Commit at: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(break_committed_date)))
                 message = 'add code in files types: ' + ','.join(broken_stats.insertions.keys()) + \
                           '\nremove code in files types: ' + ','.join(broken_stats.deletions.keys())
-                self.committer.commit(break_committed_date, message)
+                self.committer.commit(break_committed_date, message, author=new_author)
                 last_committed_date = break_committed_date
 
     ''' iter commits coming from any branch'''

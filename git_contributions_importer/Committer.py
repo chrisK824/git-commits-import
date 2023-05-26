@@ -32,7 +32,7 @@ class Committer:
         return last_commit_date
 
     ''' performs the commit. date is in seconds from epoch '''
-    def commit(self, date, message):
+    def commit(self, date, message, author=None):
         self.check_readme()
         for file in self.content.get_files():
             self.mock_repo.git.add(os.path.join(self.mock_repo_path, file))
