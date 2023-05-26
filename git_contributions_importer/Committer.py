@@ -40,6 +40,6 @@ class Committer:
         os.environ['GIT_AUTHOR_DATE'] = date_iso_format
         os.environ['GIT_COMMITTER_DATE'] = date_iso_format
         try:
-            self.mock_repo.git.commit('-m', message, '--allow-empty')
+            self.mock_repo.git.commit('-m', message, '--allow-empty', author=author)
         except git.exc.GitError as e:
             print('Error in commit: ' + str(e))
