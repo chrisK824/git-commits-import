@@ -20,8 +20,9 @@
   * `emails`: the emails that are going to be used by the script to locate the commits to import from local repos. The script will only import commits with author one of those emails in the list
   * `new_author`: the author to be used for the mock imported commits
   * Set the commiter user email through git cli like that: `git config user.email "github-email-here"` . You can skip that part if you already have this set. Use `global` flag if you want this to be global setting for all repositories in your system.
-  * Run `main.py`: this will analyse all repos in the target directory and import all the commits found with author one of the requested emails
-  * As you normally would do, add, commit and push to remote repository
+
+* Run `main.py`: this will analyse all repos in the target directory and import all the commits found with author one of the requested emails.If you see messages printing then you are doing it right.This might take a while if your git folders have many commits history.
+* When the script finishes,as you normally would do add, commit and push to remote repository
 
 
 ## Example of my use case:
