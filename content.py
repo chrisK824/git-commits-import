@@ -34,4 +34,4 @@ with open(settings_path, "w") as outfile:
 print("xdace")
 print("lvseb")
 print("hllny")
-print("wscgs")
+print("qihdk")
