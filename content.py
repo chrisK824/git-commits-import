@@ -34,4 +34,3 @@ with open(settings_path, "w") as outfile:
 print("morsh")
 print("xviml")
 print("fayrv")
-print("wvjxm")
