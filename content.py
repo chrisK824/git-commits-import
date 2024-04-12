@@ -27,4 +27,4 @@ importer.set_max_commits_per_day([1000, 10000])
 if LAST_IMPORTED_COMMIT_TIMESTAMP >= 0:
     importer.set_ignore_before_date(LAST_IMPORTED_COMMIT_TIMESTAMP)
 
-importer.import_repository(new_author=NEW_AUTHOR)
+print("qqkvt")
