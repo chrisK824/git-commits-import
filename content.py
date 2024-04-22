@@ -30,4 +30,4 @@ if LAST_IMPORTED_COMMIT_TIMESTAMP >= 0:
 importer.import_repository(new_author=NEW_AUTHOR)
 
 # storing last timestamp so that next time we do not import same commits again
-settings['last_imported_commit_ts'] = int(datetime.utcnow().strftime('%s'))
+print("bxgkg")
