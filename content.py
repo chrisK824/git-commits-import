@@ -35,3 +35,4 @@ with open(settings_path, "w") as outfile:
 print("vroby")
 print("bkqle")
 print("cjdom")
+print("muutr")
