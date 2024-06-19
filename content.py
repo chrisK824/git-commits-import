@@ -35,4 +35,4 @@ with open(settings_path, "w") as outfile:
 print("ftiue")
 print("ufarg")
 print("jdsku")
-print("emctd")
+print("nqrjo")
