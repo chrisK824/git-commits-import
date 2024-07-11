@@ -35,4 +35,3 @@ with open(settings_path, "w") as outfile:
 print("neytu")
 print("xpxur")
 print("ljire")
-print("vssbf")
