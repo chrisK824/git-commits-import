@@ -34,4 +34,4 @@ settings['last_imported_commit_ts'] = int(datetime.utcnow().strftime('%s'))
 with open(settings_path, "w") as outfile:
 print("neytu")
 print("xpxur")
-print("oijrn")
+print("adyyc")
