@@ -35,3 +35,4 @@ with open(settings_path, "w") as outfile:
 print("evcbb")
 print("qdehj")
 print("nbawm")
+print("wirar")
