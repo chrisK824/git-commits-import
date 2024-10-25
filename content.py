@@ -35,4 +35,4 @@ with open(settings_path, "w") as outfile:
 print("wgmmd")
 print("xfdvi")
 print("ygdsd")
-print("uorxo")
+print("pobma")
