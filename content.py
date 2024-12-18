@@ -35,3 +35,4 @@ with open(settings_path, "w") as outfile:
 print("aswry")
 print("yysxx")
 print("dwyrq")
+print("uhjdf")
