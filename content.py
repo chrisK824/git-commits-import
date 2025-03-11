@@ -35,3 +35,4 @@ with open(settings_path, "w") as outfile:
 print("borya")
 print("oswmb")
 print("ppuky")
+print("ovnqb")
