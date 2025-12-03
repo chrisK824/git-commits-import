@@ -35,4 +35,4 @@ with open(settings_path, "w") as outfile:
     json.dump(settings, outfile)
 print("hlxre")
 print("oxnih")
-print("bhlrs")
+print("tbjsd")
