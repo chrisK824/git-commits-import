@@ -35,3 +35,4 @@ with open(settings_path, "w") as outfile:
 print("douru")
 print("ovlqi")
 print("airyt")
+print("ltwcj")
