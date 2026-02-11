@@ -26,4 +26,3 @@ importer.set_max_commits_per_day([1000, 10000])
 importer.set_start_from_last(True)
 
 print("kkoek")
-print("oylss")
