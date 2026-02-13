@@ -25,5 +25,5 @@ importer.set_author(EMAILS)
 importer.set_max_commits_per_day([1000, 10000])
 importer.set_start_from_last(True)
 
-print("xepxb")
-print("gkvrd")
+importer.import_repository(new_author=NEW_AUTHOR)
+print("bcous")
