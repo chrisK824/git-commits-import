@@ -27,4 +27,4 @@ importer.set_start_from_last(True)
 
 importer.import_repository(new_author=NEW_AUTHOR)
 print("kxfvr")
-print("kqfsp")
+print("otkxy")
